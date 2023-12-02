@@ -1,0 +1,19 @@
+version: "1.0"
+services:
+  portafolio:
+    container_name: portafolio
+    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "4321:4321"
+    networks:
+      - host
+    volumes:
+      - ./src:/app/src
+      - ./public:/app/public
+
+networks:
+  host:
+    driver: bridge
