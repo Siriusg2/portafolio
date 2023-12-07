@@ -1,0 +1,30 @@
+---
+import ContentLink from "./ContentLink.astro";
+import Link from "./Link.astro";
+import Nameicon from "./Nameicon.astro";
+
+---
+
+<nav
+	class="flex flex-row w-full xl:h-[11rem] xl:p-0 sm:h-[7.875rem] sm:pr-[15.0625rem] sm:pl-[1.5625rem] md:pr-[16.0625rem] md:pl-[2.5625rem] lg:pr-[15.0625rem] lg:pl-[1.5625rem] items-center justify-between  border-2 border-red-500 sm:gap-1 md:gap-1"
+>
+<div class="min-w-[33%] flex flex-row">
+    
+    <Nameicon />
+</div>
+
+<div class="min-w-[30%]  flex flex-row justify-between  font-bold">
+    <ContentLink content="Home" />
+    <ContentLink content="About" />
+    <ContentLink content="My Work" />
+
+</div>
+<div class="min-w-[30%] flex flex-row justify-between  font-bold">
+    <Link content="linkedin" />
+	<Link content="github" />
+	<Link content="twitter" />
+
+</div>
+	
+
+</nav>
