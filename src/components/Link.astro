@@ -1,14 +1,19 @@
 ---
+
 interface Props {
 	content: string
+
 }
 
 const { content } = Astro.props
+
+
 ---
 <div
-		class="2xl:inline-flex 1xl:inline-flex xl:inline-flex lg:inline-flex md:hidden sm:hidden flex justify-center items-center gap-x-[0.3125rem] text-primary-400 hover:text-primary-950 fill-primary-400 hover:fill-primary-950 py-0 hover:py-0 hover:bg-primary-400"
+		class="flex mr-3 ml-3 gap-x-[1rem] text-primary-400 hover:text-primary-950 fill-primary-400 hover:fill-primary-950 py-0 hover:py-0 hover:bg-primary-400"
 	>
 		<a href="">{content}</a><svg
+		class="self-center"
 			xmlns="http://www.w3.org/2000/svg"
 			width="10"
 			height="10"
