@@ -5,11 +5,12 @@ import Profileimage from '../components/Profileimage.astro'
 import Layout from '../layouts/Layout.astro'
 import Skillsbutton from '../components/Skillsbutton.astro'
 import Programminglanguages from '../components/Programminglanguages.astro'
+import Logo from '../components/Logo.astro'
 ---
 
 <Layout title="Gibson's Gil Site">
-	<main class="flex h-full min-h-[100vh] w-full flex-col">
-		<div class="ml-5 mt-10 w-[75%] self-center">
+	<main class="flex  min-h-[100vh]  flex-col">
+		<div class="ml-5 mt-1 w-[75%] self-center">
 			<Cursortitle />
 			<div class="mx-[14%]">
 				<span
@@ -18,10 +19,10 @@ import Programminglanguages from '../components/Programminglanguages.astro'
 				>
 			</div>
 		</div>
-		<section class="mt-10 flex w-[80%] flex-row self-center">
+		<section class="mt-10 flex xs:w-screen md:w-screen xs:bg-primary-980 sm:bg-primary-980 md:bg-primary-980 lg:bg-primary-980 xl:bg-primary-950 1xl:bg-primary-950 2xl:bg-primary-950  sm:w-screen lg:w-screen xl:w-[70%] 1xl:w-[70%] 2xl:w-[70%] flex-row self-center">
 			<Socialmedia />
 			<div
-				class="xs:min-w-screen md:min-w-screen flex flex-col bg-primary-980 sm:w-screen lg:w-screen xl:w-[70%] 1xl:w-[70%] 2xl:w-[70%]"
+				class=" flex flex-col "
 			>
 				<div
 					class="xs:item-center flex xs:flex-col sm:flex-col sm:items-center md:flex-col md:items-center lg:flex-col lg:items-center xl:flex-row-reverse xl:items-end 1xl:flex-row-reverse 1xl:items-end 2xl:flex-row-reverse 2xl:items-end"
@@ -30,6 +31,7 @@ import Programminglanguages from '../components/Programminglanguages.astro'
 					<Programminglanguages />
 				</div>
 				<Skillsbutton />
+				<Logo />
 			</div>
 		</section>
 	</main>
