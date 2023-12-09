@@ -1,50 +1,57 @@
-
-
-<div class="container min-w-fit h-[5rem] flex flex-row items-center justify-center border-2 border-red-500 ">
-    <p>&nbsp;
-      <h1 class="typed-text text-primary-500 text-[5rem] font-bold uppercase"></h1><span class="cursor  bg-primary-600 text-[2.5rem] ">&nbsp;</span></p>
-  </div>
+<div class="container flex h-[5rem] w-full
+  flex-row items-center justify-center">
+	<p>
+		&nbsp;
+		<h1
+			class="typed-text font-bold uppercase text-primary-500 xs:text-[2rem]
+     sm:text-[2rem] md:text-[1.9rem] lg:text-[2.5rem] xl:text-[3rem] 1xl:text-[3rem] 2xl:text-[5rem]"
+		>
+		</h1><span
+			class="cursor bg-primary-600 xs:text-[1rem] sm:text-[1rem] md:text-[1rem]
+     lg:text-[1rem] xl:text-[2rem] 1xl:text-[2rem] 2xl:text-[3rem]"
+			>&nbsp;</span
+		>
+	</p>
+</div>
 <script>
- const typedTextSpan = document.querySelector(".typed-text");
-const cursorSpan = document.querySelector(".cursor");
+	const typedTextSpan = document.querySelector('.typed-text')
+	const cursorSpan = document.querySelector('.cursor')
 
-const textArray = ["Backend Developer", "Frontend Developer", "Fullstack Developer"];
-const typingDelay = 75;
-const erasingDelay = 75;
-const newTextDelay = 1000; // Delay between current and next text
-let textArrayIndex = 0;
-let charIndex = 0;
+	const textArray = ['Backend Developer', 'Frontend Developer', 'Fullstack Developer']
+	const typingDelay = 75
+	const erasingDelay = 75
+	const newTextDelay = 1000 // Delay between current and next text
+	let textArrayIndex = 0
+	let charIndex = 0
 
-function type() {
-  if (charIndex < textArray[textArrayIndex].length && cursorSpan && typedTextSpan) {
-    if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
-    typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
-    charIndex++;
-    setTimeout(type, typingDelay);
-  } 
-  else {
-    cursorSpan !== null? cursorSpan.classList.remove("typing"): null;
-  	setTimeout(erase, newTextDelay);
-  }
-}
+	function type() {
+		if (charIndex < textArray[textArrayIndex].length && cursorSpan && typedTextSpan) {
+			if (!cursorSpan.classList.contains('typing')) cursorSpan.classList.add('typing')
+			typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex)
+			charIndex++
+			setTimeout(type, typingDelay)
+		} else {
+			cursorSpan !== null ? cursorSpan.classList.remove('typing') : null
+			setTimeout(erase, newTextDelay)
+		}
+	}
 
-function erase() {
-	if (charIndex > 0 && cursorSpan && typedTextSpan) {
-    if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
-    typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex-1);
-    charIndex--;
-    setTimeout(erase, erasingDelay);
-  } 
-  else {
+	function erase() {
+		if (charIndex > 0 && cursorSpan && typedTextSpan) {
+			if (!cursorSpan.classList.contains('typing')) cursorSpan.classList.add('typing')
+			typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex - 1)
+			charIndex--
+			setTimeout(erase, erasingDelay)
+		} else {
+			cursorSpan !== null ? cursorSpan.classList.remove('typing') : null
+			textArrayIndex++
+			if (textArrayIndex >= textArray.length) textArrayIndex = 0
+			setTimeout(type, typingDelay + 1100)
+		}
+	}
 
-    cursorSpan !== null? cursorSpan.classList.remove("typing"): null;
-    textArrayIndex++;
-    if(textArrayIndex>=textArray.length) textArrayIndex=0;
-    setTimeout(type, typingDelay + 1100);
-  }
-}
-
-document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
-  if(textArray.length) setTimeout(type, newTextDelay + 250);
-});
+	document.addEventListener('DOMContentLoaded', function () {
+		// On DOM Load initiate the effect
+		if (textArray.length) setTimeout(type, newTextDelay + 250)
+	})
 </script>

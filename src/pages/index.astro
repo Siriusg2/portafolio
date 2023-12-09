@@ -1,15 +1,36 @@
 ---
-import Cursortitle from '../components/Cursortitle.astro';
+import Cursortitle from '../components/Cursortitle.astro'
+import Socialmedia from '../components/Socialmedia.astro'
+import Profileimage from '../components/Profileimage.astro'
 import Layout from '../layouts/Layout.astro'
-
+import Skillsbutton from '../components/Skillsbutton.astro'
+import Programminglanguages from '../components/Programminglanguages.astro'
 ---
 
 <Layout title="Gibson's Gil Site">
-	<main class="w-full h-full flex flex-col">
-<div class="self-center mt-10">
-
-	<Cursortitle />
-</div>
-
+	<main class="flex h-full min-h-[100vh] w-full flex-col">
+		<div class="ml-5 mt-10 w-[75%] self-center">
+			<Cursortitle />
+			<div class="mx-[14%]">
+				<span
+					class="font-sans text-base text-primary-400 xs:hidden sm:hidden md:hidden lg:inline-flex xl:inline-flex 1xl:inline-flex 2xl:inline-flex"
+					>Gibson<br /> Gil &#123Dev&#125</span
+				>
+			</div>
+		</div>
+		<section class="mt-10 flex w-[80%] flex-row self-center">
+			<Socialmedia />
+			<div
+				class="xs:min-w-screen md:min-w-screen flex flex-col bg-primary-980 sm:w-screen lg:w-screen xl:w-[70%] 1xl:w-[70%] 2xl:w-[70%]"
+			>
+				<div
+					class="xs:item-center flex xs:flex-col sm:flex-col sm:items-center md:flex-col md:items-center lg:flex-col lg:items-center xl:flex-row-reverse xl:items-end 1xl:flex-row-reverse 1xl:items-end 2xl:flex-row-reverse 2xl:items-end"
+				>
+					<Profileimage />
+					<Programminglanguages />
+				</div>
+				<Skillsbutton />
+			</div>
+		</section>
 	</main>
 </Layout>
