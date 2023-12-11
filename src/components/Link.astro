@@ -1,15 +1,16 @@
 ---
 interface Props {
 	content: string
+	href: string
 }
 
-const { content } = Astro.props
+const { content, href } = Astro.props
 ---
 
 <div
 	class="ml-3 mr-3 flex gap-x-[1rem] fill-primary-400 py-0 text-primary-400 hover:bg-primary-400 hover:fill-primary-950 hover:py-0 hover:text-primary-950"
 >
-	<a href="">{content}</a><svg
+	<a href={href}>{content}</a><svg
 		class="self-center"
 		xmlns="http://www.w3.org/2000/svg"
 		width="10"
