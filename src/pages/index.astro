@@ -7,6 +7,10 @@ import Skillsbutton from '../components/Skillsbutton.astro'
 import Programminglanguages from '../components/Programminglanguages.astro'
 import Logo from '../components/Logo.astro'
 import Aboutme from '../components/Aboutme.astro'
+import Programmingbanner from '../components/Programmingbanner.astro'
+import Javascriptframeworks from '../components/Javascriptframeworks.astro'
+import Otherframeworks from '../components/Otherframeworks.astro'
+import DatabasesDT from '../components/DatabasesDT.astro'
 ---
 
 <Layout title="Gibson's Gil Site">
@@ -44,7 +48,13 @@ import Aboutme from '../components/Aboutme.astro'
 					</div>
 				</div>
 
-				<Skillsbutton />
+				<Skillsbutton
+					title="skills"
+					bgcolor="bg-primary-350"
+					textcolor="text-primary-980"
+					textsize="text-[80%]"
+					svgcolor="#141a12"
+				/>
 			</div>
 		</section>
 		<div
@@ -57,6 +67,19 @@ import Aboutme from '../components/Aboutme.astro'
 			class="self-center xs:mt-10 sm:mt-10 md:mt-10 lg:mt-48 xl:mt-48 1xl:mt-48 2xl:mt-48"
 		>
 			<Aboutme />
+		</section>
+
+		<section id="hardskills" class="mt-10 w-screen self-center">
+			<Programmingbanner />
+			<Javascriptframeworks />
+			<Otherframeworks />
+			<DatabasesDT />
+			<Skillsbutton
+				title="work"
+				bgcolor="bg-primary-980 min-h-[5rem]"
+				textcolor="text-primary-400"
+				svgcolor="#BFE6AD"
+			/>
 		</section>
 	</main>
 </Layout>
