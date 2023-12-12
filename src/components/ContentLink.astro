@@ -1,12 +1,13 @@
 ---
 interface Props {
 	content: string
+	href: string
 }
-const { content } = Astro.props
+const { content, href } = Astro.props
 ---
 
 <a
-	href=""
+	href={href}
 	class="ml-2 mr-2 rounded-md p-1 text-primary-400 transition duration-300 hover:bg-primary-900 hover:p-3 hover:font-bold hover:text-primary-300"
 	>{content}</a
 >

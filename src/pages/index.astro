@@ -6,6 +6,8 @@ import Layout from '../layouts/Layout.astro'
 import Skillsbutton from '../components/Skillsbutton.astro'
 import Programminglanguages from '../components/Programminglanguages.astro'
 import Logo from '../components/Logo.astro'
+import Aboutme from '../components/Aboutme.astro'
+
 ---
 
 <Layout title="Gibson's Gil Site">
@@ -19,7 +21,7 @@ import Logo from '../components/Logo.astro'
 				>
 			</div>
 		</div>
-		<section
+		<section id="home"
 			class="mt-10 flex justify-center self-center xs:w-screen xs:flex-col sm:w-screen sm:flex-col md:w-screen md:flex-col lg:w-screen lg:flex-col xl:w-[75%] xl:flex-row 1xl:w-[75%] 1xl:flex-row 2xl:w-[75%] 2xl:flex-row"
 		>
 			<div
@@ -49,5 +51,9 @@ import Logo from '../components/Logo.astro'
 		>
 			<Logo />
 		</div>
+	<section id="about" class="self-center mt-48">
+
+	<Aboutme />
+	</section>
 	</main>
 </Layout>
