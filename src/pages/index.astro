@@ -9,7 +9,7 @@ import Logo from '../components/Logo.astro'
 ---
 
 <Layout title="Gibson's Gil Site">
-	<main class=" flex flex-col min-h-[100vh]  ">
+	<main class="flex flex-col">
 		<div class="ml-5 mt-1 w-[75%] self-center">
 			<Cursortitle />
 			<div class="mx-[14%]">
@@ -19,27 +19,35 @@ import Logo from '../components/Logo.astro'
 				>
 			</div>
 		</div>
-		<section class="mt-10 flex xs:w-screen md:w-screen   sm:w-screen lg:w-screen xl:w-[75%] 1xl:w-[75%] 2xl:w-[75%] flex-row self-center">
-			<div class="w-[35%] h-[100%] xs:hidden sm:hidden md:hidden lg:hidden xl:inline-flex 1xl:inline-flex 2xl:inline-flex">
-
+		<section
+			class="mt-10 flex justify-center self-center xs:w-screen xs:flex-col sm:w-screen sm:flex-col md:w-screen md:flex-col lg:w-screen lg:flex-col xl:w-[75%] xl:flex-row 1xl:w-[75%] 1xl:flex-row 2xl:w-[75%] 2xl:flex-row"
+		>
+			<div
+				class="h-[80%] w-[35%] items-center xs:hidden sm:hidden md:hidden lg:hidden xl:inline-flex 1xl:inline-flex 2xl:inline-flex"
+			>
 				<Socialmedia />
 			</div>
 			<div
-				class=" flex flex-col w-[65%]"
+				class="flex flex-col xs:w-screen sm:w-screen md:w-screen lg:w-screen xl:w-[65%] 1xl:w-[65%] 2xl:w-[65%]"
 			>
 				<div
-					class="xs:item-center flex xs:flex-col h-[85%] sm:flex-col sm:items-center md:flex-col md:items-center bg-primary-980 lg:flex-col lg:items-center xl:flex-row-reverse xl:items-end 1xl:flex-row-reverse 1xl:items-center 2xl:flex-row-reverse 2xl:items-end sm:relative xs:relative md:relative lg:relative xl:relative 1xl:relative 2xl:relative"
+					class="flex w-full self-center bg-primary-980 xs:relative xs:flex-col sm:relative sm:flex-col md:relative md:flex-col lg:static lg:flex-col xl:relative xl:flex-row-reverse 1xl:relative 1xl:flex-row-reverse 1xl:items-center 2xl:relative 2xl:flex-row-reverse 2xl:items-end"
 				>
 					<Profileimage />
 					<Programminglanguages />
-					<div class="xs:static xs:self-center sm:static sm:self-center md:static md:self-center lg:absolute lg:bottom-[-46%] w-[55%] h-[55%] lg:-left-[80%] xl:absolute 1xl:absolute 2xl:absolute xs: sm: md: lg: xl: 1xl: 2xl:  ">
-
+					<div
+						class="-left-[80%] bottom-[-46%] h-[55%] w-[55%] xs:hidden sm:hidden md:hidden lg:hidden xl:absolute xl:inline-flex 1xl:absolute 1xl:inline-flex 2xl:absolute 2xl:inline-flex"
+					>
 						<Logo />
 					</div>
 				</div>
 				<Skillsbutton />
 			</div>
 		</section>
-	
+		<div
+			class="mt-10 w-[75%] self-center xs:inline-block sm:inline-block md:inline-block lg:inline-block xl:hidden 1xl:hidden 2xl:hidden"
+		>
+			<Logo />
+		</div>
 	</main>
 </Layout>
