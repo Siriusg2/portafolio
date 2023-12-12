@@ -7,7 +7,6 @@ import Skillsbutton from '../components/Skillsbutton.astro'
 import Programminglanguages from '../components/Programminglanguages.astro'
 import Logo from '../components/Logo.astro'
 import Aboutme from '../components/Aboutme.astro'
-
 ---
 
 <Layout title="Gibson's Gil Site">
@@ -21,7 +20,8 @@ import Aboutme from '../components/Aboutme.astro'
 				>
 			</div>
 		</div>
-		<section id="home"
+		<section
+			id="home"
 			class="mt-10 flex justify-center self-center xs:w-screen xs:flex-col sm:w-screen sm:flex-col md:w-screen md:flex-col lg:w-screen lg:flex-col xl:w-[75%] xl:flex-row 1xl:w-[75%] 1xl:flex-row 2xl:w-[75%] 2xl:flex-row"
 		>
 			<div
@@ -43,17 +43,20 @@ import Aboutme from '../components/Aboutme.astro'
 						<Logo />
 					</div>
 				</div>
+
 				<Skillsbutton />
 			</div>
 		</section>
 		<div
-			class="mt-10 w-[75%] self-center xs:inline-block sm:inline-block md:inline-block lg:inline-block xl:hidden 1xl:hidden 2xl:hidden"
+			class="mt-10 w-[70%] self-center xs:inline-block sm:inline-block md:inline-block lg:inline-block xl:hidden 1xl:hidden 2xl:hidden"
 		>
 			<Logo />
 		</div>
-	<section id="about" class="self-center mt-48">
-
-	<Aboutme />
-	</section>
+		<section
+			id="about"
+			class="self-center xs:mt-10 sm:mt-10 md:mt-10 lg:mt-48 xl:mt-48 1xl:mt-48 2xl:mt-48"
+		>
+			<Aboutme />
+		</section>
 	</main>
 </Layout>
