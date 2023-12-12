@@ -9,7 +9,7 @@ import Logo from '../components/Logo.astro'
 ---
 
 <Layout title="Gibson's Gil Site">
-	<main class="flex  min-h-[100vh]  flex-col">
+	<main class=" flex flex-col min-h-[100vh]  ">
 		<div class="ml-5 mt-1 w-[75%] self-center">
 			<Cursortitle />
 			<div class="mx-[14%]">
@@ -19,8 +19,8 @@ import Logo from '../components/Logo.astro'
 				>
 			</div>
 		</div>
-		<section class="mt-10 flex xs:w-screen md:w-screen xs:bg-primary-980 sm:bg-primary-980 md:bg-primary-980 lg:bg-primary-980 xl:bg-primary-950 1xl:bg-primary-950 2xl:bg-primary-950  sm:w-screen lg:w-screen xl:w-[70%] 1xl:w-[70%] 2xl:w-[70%] flex-row self-center">
-			<div class="w-[35%] h-[100%]">
+		<section class="mt-10 flex xs:w-screen md:w-screen   sm:w-screen lg:w-screen xl:w-[75%] 1xl:w-[75%] 2xl:w-[75%] flex-row self-center">
+			<div class="w-[35%] h-[100%] xs:hidden sm:hidden md:hidden lg:hidden xl:inline-flex 1xl:inline-flex 2xl:inline-flex">
 
 				<Socialmedia />
 			</div>
@@ -28,14 +28,18 @@ import Logo from '../components/Logo.astro'
 				class=" flex flex-col w-[65%]"
 			>
 				<div
-					class="xs:item-center flex xs:flex-col sm:flex-col sm:items-center md:flex-col md:items-center bg-primary-980 lg:flex-col lg:items-center xl:flex-row-reverse xl:items-end 1xl:flex-row-reverse 1xl:items-end 2xl:flex-row-reverse 2xl:items-end"
+					class="xs:item-center flex xs:flex-col h-[85%] sm:flex-col sm:items-center md:flex-col md:items-center bg-primary-980 lg:flex-col lg:items-center xl:flex-row-reverse xl:items-end 1xl:flex-row-reverse 1xl:items-center 2xl:flex-row-reverse 2xl:items-end sm:relative xs:relative md:relative lg:relative xl:relative 1xl:relative 2xl:relative"
 				>
 					<Profileimage />
 					<Programminglanguages />
+					<div class="xs:static xs:self-center sm:static sm:self-center md:static md:self-center lg:absolute lg:bottom-[-46%] w-[55%] h-[55%] lg:-left-[80%] xl:absolute 1xl:absolute 2xl:absolute xs: sm: md: lg: xl: 1xl: 2xl:  ">
+
+						<Logo />
+					</div>
 				</div>
 				<Skillsbutton />
 			</div>
 		</section>
-		<Logo />
+	
 	</main>
 </Layout>
