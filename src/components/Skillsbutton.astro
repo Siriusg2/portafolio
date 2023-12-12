@@ -5,11 +5,13 @@ interface Props {
 	textcolor?: string
 	textsize?: string
 	svgcolor?: string
+	href?: string
 }
-const { title, bgcolor, textcolor, textsize, svgcolor } = Astro.props
+const { title, bgcolor, textcolor, textsize, svgcolor, href } = Astro.props
 ---
 
-<div
+<a
+	href=`${href}`
 	class=`${bgcolor} flex w-full items-center justify-between justify-self-end px-5 xs:h-[4rem] sm:h-[4rem] md:h-[4rem] lg:h-[4rem] xl:h-[20%] 1xl:h-[20%] 2xl:h-[20%]`
 >
 	<div>
@@ -71,4 +73,4 @@ const { title, bgcolor, textcolor, textsize, svgcolor } = Astro.props
 			</g>
 		</svg>
 	</div>
-</div>
+</a>
