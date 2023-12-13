@@ -6,36 +6,9 @@ interface Props {
 const { content, href } = Astro.props
 ---
 
-<a
-	href={href}
-	class="  rounded-md p-1 text-primary-400 transition duration-500 hover:bg-primary-900    hover:text-primary-300"
-	>{content}</a
->
-<style>
+<a href={href} class="group relative h-8 w-[20%] text-primary-400 overflow-hidden rounded-lg text-lg shadow">
+    <div class="absolute inset-0 w-0 bg-primary-400 transition-all duration-[450ms] ease-out group-hover:w-full"></div>
+    <span class="relative text-black group-hover:text-primary-950">{content}</span>
+  </a>
 
-
-
-
-
-.animate-bottom-top:hover .button-children {
-    animation: translate-y-bottom-top var(--speed) forwards;
-}
-@keyframes translate-y-bottom-top {
-    25% {
-        transform: translateY(var(--distance));
-        opacity: 0;
-    }
-    26% {
-        transform: translateY(var(--distance-negative));
-        opacity: 0;
-    }
-}
-
-
-
-
-
-
-
-</style>
 
