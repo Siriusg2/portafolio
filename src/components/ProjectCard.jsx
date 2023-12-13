@@ -11,22 +11,22 @@ const ProjectCard = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8 w-full max-w-6xl mx-auto">
         <Card
           heading="Space food"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, exercitationem."
+          description="This is a full stack application, with advanced features, such as third-party authentication (google login), payment gateway, sending email notifications, among others! It was built using the PERN stack (Postgresql, Expressjs, React, Node), which emulates the operation of a fast food e-commerce "
           imgSrc={spacefood}
         />
         <Card
           heading="Store space food"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, exercitationem."
+          description="This is a full stack application emulates the operation of a fast food e-commerce from administration side "
           imgSrc={storespacefood}
         />
         <Card
           heading="Gamersland"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, exercitationem."
+          description="This is a full-stack application based on the theme of retro videogames"
           imgSrc={gamersland}
         />
         <Card
           heading="Multiverseland"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, exercitationem."
+          description="This is a React application, based on the theme of the animated series Rick & Morty, which shows a series of cards with the basic information of each character in the serie"
           imgSrc={multiverseland}
         />
       </div>
@@ -52,9 +52,9 @@ const Card = ({ heading, description, imgSrc }) => {
           backgroundPosition: "center",
         }}
       />
-      <div className="p-4 relative z-20 h-full  hover:text-primary-950 text-primary-80 group-hover:text-white transition-colors duration-500 flex flex-col justify-between">
+      <div className="p-4 relative z-20 h-full  hover:text-[#0eab29]  text-primary-80 group-hover:text-white transition-colors duration-500 flex flex-col justify-between">
         <FiArrowRight className="text-3xl group-hover:-rotate-45 transition-transform duration-500 ml-auto" />
-        <div className="  hover:bg-primary-400 transition-color duration-200 ">
+        <div>
           <h4>
             {heading.split("").map((l, i) => (
               <ShiftLetter letter={l} key={i} />
