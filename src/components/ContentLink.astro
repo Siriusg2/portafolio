@@ -8,6 +8,34 @@ const { content, href } = Astro.props
 
 <a
 	href={href}
-	class="ml-2 mr-2 rounded-md p-1 text-primary-400 transition duration-300 hover:bg-primary-900 hover:p-3 hover:font-bold hover:text-primary-300"
+	class="  rounded-md p-1 text-primary-400 transition duration-500 hover:bg-primary-900    hover:text-primary-300"
 	>{content}</a
 >
+<style>
+
+
+
+
+
+.animate-bottom-top:hover .button-children {
+    animation: translate-y-bottom-top var(--speed) forwards;
+}
+@keyframes translate-y-bottom-top {
+    25% {
+        transform: translateY(var(--distance));
+        opacity: 0;
+    }
+    26% {
+        transform: translateY(var(--distance-negative));
+        opacity: 0;
+    }
+}
+
+
+
+
+
+
+
+</style>
+

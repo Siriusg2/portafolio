@@ -44,16 +44,17 @@ const Card = ({ heading, description, imgSrc }) => {
       className="w-full h-64 bg-slate-300 overflow-hidden cursor-pointer group relative"
     >
       <div
-        className="absolute inset-0 saturate-100 md:saturate-0 md:group-hover:saturate-100 group-hover:scale-110 transition-all duration-500"
+        className="absolute inset-0 saturate-100 md:saturate-0 md:group-hover:saturate-100 group-hover:scale-110 transition-all duration-500 "
         style={{
           backgroundImage: `url(${imgSrc})`,
           backgroundSize: "cover",
+
           backgroundPosition: "center",
         }}
       />
       <div className="p-4 relative z-20 h-full  hover:text-primary-950 text-primary-80 group-hover:text-white transition-colors duration-500 flex flex-col justify-between">
         <FiArrowRight className="text-3xl group-hover:-rotate-45 transition-transform duration-500 ml-auto" />
-        <div className="hover w-full hover:bg-primary-400 hover:transition-colors duration-200  ">
+        <div className="  hover:bg-primary-400 transition-color duration-200 ">
           <h4>
             {heading.split("").map((l, i) => (
               <ShiftLetter letter={l} key={i} />
