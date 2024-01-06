@@ -1,6 +1,7 @@
 FROM node:lts AS runtime
+RUN  npm install -g pnpm
 WORKDIR /app
-RUN npm install -g pnpm
+
 COPY . .
 
 RUN pnpm install

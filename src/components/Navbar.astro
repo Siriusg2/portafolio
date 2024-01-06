@@ -2,11 +2,10 @@
 import ContentLink from './ContentLink.astro'
 import Link from './Link.astro'
 import Nameicon from './Nameicon.astro'
-
 ---
 
 <nav
-	class="flex w-full flex-row items-center justify-between px-10 py-10 xs:px-0 sm:px-0 md:px-0 lg:px-0 hover:cursor-text"
+	class="flex w-full flex-row items-center justify-between px-10 py-10 hover:cursor-text xs:px-0 sm:px-0 md:px-0 lg:px-0"
 >
 	<div
 		class="lg:full mx-10 justify-self-start sm:w-full md:w-full lg:w-[33%] xl:w-[33%] 1xl:w-[33%] 2xl:w-[33%]"
@@ -15,12 +14,11 @@ import Nameicon from './Nameicon.astro'
 	</div>
 
 	<div
-		class="w-[33%] self-center xs:hidden sm:hidden md:hidden lg:hidden xl:inline-flex 1xl:inline-flex 2xl:inline-flex gap-x-8"
+		class="w-[33%] gap-x-8 self-center xs:hidden sm:hidden md:hidden lg:hidden xl:inline-flex 1xl:inline-flex 2xl:inline-flex"
 	>
 		<ContentLink content="Home" href="#home" />
 		<ContentLink content="About" href="#about" />
 		<ContentLink content="My work" href="#mywork" />
-
 	</div>
 	<div
 		class="ml-10 flex w-[33%] flex-row font-bold xs:hidden sm:hidden md:hidden lg:hidden xl:inline-flex 1xl:inline-flex 2xl:inline-flex"

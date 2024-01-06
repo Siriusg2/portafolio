@@ -16,7 +16,7 @@ import ProjectCard from '../components/ProjectCard'
 
 <Layout title="Gibson's Gil Site">
 	<main class="flex flex-col">
-		<div id="home" class="ml-5 mt-1 w-[75%] self-center ">
+		<div id="home" class="ml-5 mt-1 w-[75%] self-center">
 			<Cursortitle />
 			<div class="mx-[14%]">
 				<span
@@ -26,7 +26,6 @@ import ProjectCard from '../components/ProjectCard'
 			</div>
 		</div>
 		<section
-			
 			class="mt-10 flex justify-center self-center xs:w-screen xs:flex-col sm:w-screen sm:flex-col md:w-screen md:flex-col lg:w-screen lg:flex-col xl:w-[75%] xl:flex-row 1xl:w-[75%] 1xl:flex-row 2xl:w-[75%] 2xl:flex-row"
 		>
 			<div
@@ -68,7 +67,7 @@ import ProjectCard from '../components/ProjectCard'
 			id="about"
 			class="self-center xs:mt-10 sm:mt-10 md:mt-10 lg:mt-48 xl:mt-48 1xl:mt-48 2xl:mt-48"
 		>
-		<span class="text-primary-80 font-bold ml-32">Learn more</span>
+			<span class="ml-32 font-bold text-primary-80">Learn more</span>
 			<Aboutme />
 		</section>
 
@@ -87,11 +86,11 @@ import ProjectCard from '../components/ProjectCard'
 		</section>
 
 		<section id="mywork" class="relative mt-10 w-full self-center">
-			<span class="absolute left-[20%] text-primary-80 font-bold ">Know</span>	
-			<h1 class="absolute left-[20%] mt-3 uppercase text-primary-80 font-bold text-[3rem]">My work</h1>
-		<ProjectCard />
-
+			<span class="absolute left-[20%] font-bold text-primary-80">Know</span>
+			<h1 class="absolute left-[20%] mt-3 text-[3rem] font-bold uppercase text-primary-80">
+				My work
+			</h1>
+			<ProjectCard />
 		</section>
-		
 	</main>
 </Layout>

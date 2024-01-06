@@ -5,14 +5,11 @@ services:
     restart: always
     build:
       context: .
-      dockerfile: Dockerfile.dev
+      dockerfile: Dockerfile
     ports:
       - '4321:4321'
     networks:
       - main
-    volumes:
-      - ./src:/app/src
-      - ./public:/app/public
 
 networks:
   main:

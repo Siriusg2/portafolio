@@ -6,9 +6,13 @@ interface Props {
 const { content, href } = Astro.props
 ---
 
-<a href={href} class="group relative h-8 w-[20%] text-primary-400 overflow-hidden rounded-lg text-lg shadow">
-    <div class="absolute inset-0 w-0 bg-primary-400 transition-all duration-[450ms] ease-out group-hover:w-full"></div>
-    <span class="relative text-black group-hover:text-primary-950">{content}</span>
-  </a>
-
-
+<a
+	href={href}
+	class="group relative h-8 w-[20%] overflow-hidden rounded-lg text-lg text-primary-400 shadow"
+>
+	<div
+		class="absolute inset-0 w-0 bg-primary-400 transition-all duration-[450ms] ease-out group-hover:w-full"
+	>
+	</div>
+	<span class="text-black relative group-hover:text-primary-950">{content}</span>
+</a>

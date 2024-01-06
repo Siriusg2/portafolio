@@ -2,28 +2,27 @@
 import ContentLink from './ContentLink.astro'
 import Link from './Link.astro'
 import Nameicon from './Nameicon.astro'
-
 ---
-<div class="bg-primary-980 text-primary-400 w-full h-[14rem]  justify-start flex flex-row px-32">
 
-    <div
-    class="lg:full mx-10 justify-self-start sm:w-full md:w-full lg:w-[33%] xl:w-[33%] 1xl:w-[33%] 2xl:w-[33%] "
->
-    <Nameicon />
-</div>
+<div class="flex h-[14rem] w-full flex-row justify-start bg-primary-980 px-32 text-primary-400">
+	<div
+		class="lg:full mx-10 justify-self-start sm:w-full md:w-full lg:w-[33%] xl:w-[33%] 1xl:w-[33%] 2xl:w-[33%]"
+	>
+		<Nameicon />
+	</div>
 
-<div
-    class="w-[45%] gap-x-8 self-center xs:hidden sm:hidden md:hidden lg:inline-flex xl:inline-flex 1xl:inline-flex 2xl:inline-flex  "
->
-    <ContentLink content="Home" href="#home" />
-    <ContentLink content="About" href="#about" />
-    <ContentLink content="My work" href="#mywork" />
-</div>
-<div
-    class=" flex w-[33%] flex-col font-bold xs:inline-flex sm:inline-flex md:inline-flex lg:hidden xl:hidden 1xl:hidden 2xl:hidden  py-[3.19rem] self-center "
->
-    <Link content="linkedin" href="https://www.linkedin.com/in/gibsongil/" />
-    <Link content="github" href="https://github.com/Siriusg2" />
-    <Link content="twitter" href="https://twitter.com/gibsonavilan" />
-</div>
+	<div
+		class="w-[45%] gap-x-8 self-center xs:hidden sm:hidden md:hidden lg:inline-flex xl:inline-flex 1xl:inline-flex 2xl:inline-flex"
+	>
+		<ContentLink content="Home" href="#home" />
+		<ContentLink content="About" href="#about" />
+		<ContentLink content="My work" href="#mywork" />
+	</div>
+	<div
+		class="flex w-[33%] flex-col self-center py-[3.19rem] font-bold xs:inline-flex sm:inline-flex md:inline-flex lg:hidden xl:hidden 1xl:hidden 2xl:hidden"
+	>
+		<Link content="linkedin" href="https://www.linkedin.com/in/gibsongil/" />
+		<Link content="github" href="https://github.com/Siriusg2" />
+		<Link content="twitter" href="https://twitter.com/gibsonavilan" />
+	</div>
 </div>
