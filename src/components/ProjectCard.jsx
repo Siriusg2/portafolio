@@ -13,25 +13,25 @@ const ProjectCard = () => {
 					heading="Space food"
 					description="This is a full stack application, with advanced features, such as third-party authentication (google login), payment gateway, sending email notifications, among others! It was built using the PERN stack (Postgresql, Expressjs, React, Node), which emulates the operation of a fast food e-commerce "
 					imgSrc={spacefood}
-					url={'https://spacefood.netlify.app/'}
+					url={'https://spacefood.gibsongil.store/'}
 				/>
 				<Card
 					heading="Store space food"
 					description="This is a full stack application emulates the operation of a fast food e-commerce from administration side "
 					imgSrc={storespacefood}
-					url={'https://storespacefood.netlify.app/'}
+					url={'https://storespacefood.gibsongil.store/'}
 				/>
 				<Card
 					heading="Gamersland"
 					description="This is a full-stack application based on the theme of retro videogames"
 					imgSrc={gamersland}
-					url={'https://gamersland.netlify.app/'}
+					url={'https://gamersland.gibsongil.store/'}
 				/>
 				<Card
 					heading="Multiverseland"
 					description="This is a React application, based on the theme of the animated series Rick & Morty, which shows a series of cards with the basic information of each character in the serie"
 					imgSrc={multiverseland}
-					url={'https://multiverseland.netlify.app/home'}
+					url={'https://multiverseland.gibsongil.store/home'}
 				/>
 			</div>
 		</div>
